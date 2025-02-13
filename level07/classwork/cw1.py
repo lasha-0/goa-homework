@@ -1,0 +1,1 @@
+print|("saklaso davaleba argvak")

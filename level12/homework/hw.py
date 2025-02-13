@@ -1,0 +1,1 @@
+print("argvak davaleba radgan proektze vmushaobt")
