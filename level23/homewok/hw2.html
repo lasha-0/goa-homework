@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ასაკის ფორმა</title>
+</head>
+<body>
+
+
+<form>
+    label for="age">სახელი:</label>
+    <input type="text"> id="age" name="age" placeholder="შეიყვანეთ თქვენი ასაკი" required
+    <br><br>
+    <h2>მომხმარებლის ასაკი</h2>
+
+    <form action="/submit" method="POST">
+        <label for="age">ასაკი:</label>
+        <input type="number" id="age" name="age" min="0" max="150" required>
+        <br><br>
+        <input type="submit" value="გაგზავნა">
+    </form>
+
+</body>
+</html>

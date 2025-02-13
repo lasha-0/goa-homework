@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>რეგისტრაცია</h2>
+        <form id="registrationForm">
+            <label for="username">სახელი</label>
+            <input type="text" id="username" name="username" placeholder="შეიყვანეთ თქვენი სახელი" required>
+            
+            <label for="password">პაროლი</label>
+            <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი" required>
+            
+            <label for="confirmPassword">დაადასტურეთ პაროლი</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="გაიმეორეთ პაროლი" required>
+            
+            <div id="error-message" class="error">პაროლები არ ემთხვევა!</div>
+            
+            <button type="submit">დარეგისტრირდით</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const errorMessage = document.getElementById('error-message');
+            
+            if (password !== confirmPassword) {
+                errorMessage.style.display = 'block';
+            } else {
+                errorMessage.style.display = 'none';
+                alert('დარეგისტრირდით წარმატებით!');
+            }
+        });
+    </script>
+</body>
+</html>

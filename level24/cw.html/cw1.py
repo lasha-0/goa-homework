@@ -1,1 +1,1 @@
-#პროექტი გვქონდა
+print("davaleba argvkonda")
