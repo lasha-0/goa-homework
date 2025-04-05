@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფეხბუღთის დანიშნულება</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .section {
+            width: 30%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .image-container {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px solid white;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 100px;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ფეხბურთი</h1>
+        <p>საუკეთესო ფეხბურთელები</p>
+    </header>
+
+    <main>
+
+        <div class="section">
+            <div class="image-container">
+                <img src="https://www.google.com/imgres?q=%E1%83%A4%E1%83%94%E1%83%AE%E1%83%91%E1%83%A3%E1%83%A0%E1%83%97%E1%83%98&imgurl=https%3A%2F%2Fblogger.googleusercontent.com%2Fimg%2Fb%2FR29vZ2xl%2FAVvXsEi3P2whwUwRshXiETHyAixAaK1kcw6wkKkuuuYb_TxWfAsxYzqKaGFSuolDb0eazLtJg2XLuaMfZX8ayt7gF0m7nt5Zb9klnoJEqE7ZvjDOSq7Ob67Zy8a6ZSYOhiST4WG65c4eHTAgGezl%2Fs1600%2F2238772_big-lnd.jpg&imgrefurl=http%3A%2F%2Fkurbanfootbal.blogspot.com%2Fp%2Fblog-page_46.html&docid=vE_XcGSk4e3vdM&tbnid=eCsGDFpemSq8UM&vet=12ahUKEwjc7t26hsGMAxXY2AIHHYJwI7YQM3oECH8QAA..i&w=960&h=540&hcb=2&ved=2ahUKEwjc7t26hsGMAxXY2AIHHYJwI7YQM3oECH8QAA" alt="image1">
+            </div>
+            <h2>საქართველო</h2>
+            <p>გაინტერესებთ ფეხბურთი? ამ სექციაში აღმოჩენებთ საუკეთესო ქართველ ფეხბურთის მოთამაშეებს.</p>
+            <a href="https://ka.wikipedia.org/wiki/%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1_%E1%83%94%E1%83%A0%E1%83%9D%E1%83%95%E1%83%9C%E1%83%A3%E1%83%9A%E1%83%98_%E1%83%A1%E1%83%90%E1%83%A4%E1%83%94%E1%83%AE%E1%83%91%E1%83%A3%E1%83%A0%E1%83%97%E1%83%9D_%E1%83%9C%E1%83%90%E1%83%99%E1%83%A0%E1%83%94%E1%83%91%E1%83%98" class="button">Click</a>
+        </div>
+
+        <div class="section">
+            <div class="image-container">
+                <img src="c:\Users\admin\Downloads\პელე.jpg" alt="პელე">
+            </div>
+            <h2>ისტორიული ფეხბურთი/h2>
+            <p>ცნობილი და ისტორიული ფეხბუღთელები, რომლებიც აუცილებლად უნდა იცოდეთ!</p>
+            <p class="highlight">გადაწერეთ თქვენი ნახვა!</p>
+        </div>
+
+        <div class="section">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/80" alt="image3">
+            </div>
+            <h2>მსოფლიოში საუკეთესო ფეხბურთელი</h2>
+            <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+        </div>
+    </main>
+
+    <div class="scroll-to-top" onclick="window.scrollTo(0, 0);">
+    </div>
+</body>
+</html>
