@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading Bar Prototype</title>
+  <style>
+    .parent {
+      width: 300px;
+      height: 30px;
+      background-color: #e0e0e0;
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 3px;
+    }
+
+    .child {
+      width: 30%;
+      height: 100%;
+      background-color: #4caf50;
+      border-radius: 12px;
+      transition: width 1s ease, background-color 1s ease;
+    }
+
+    .parent:hover .child {
+      width: 100%;
+      background-color: #2196f3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+</body>
+</html>
